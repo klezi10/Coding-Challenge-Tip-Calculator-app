@@ -3,10 +3,25 @@ body {
   background-color: hsl(185, 41%, 84%);
 }
 
+.app {
+  margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: column;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 475px) {
+  .container-flex {
+    flex-direction: row;
+  }
 }
