@@ -36,6 +36,18 @@ body {
   padding: 2em 1em;
 }
 
+.bill-form ::placeholder {
+  background-image: url(images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+.people-form ::placeholder {
+  background-image: url(images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
 label {
   width: 100%;
 }
@@ -46,6 +58,7 @@ label {
   color: hsl(183, 100%, 15%);
   font-weight: 700;
   text-align: right;
+  padding: 0.4em;
 }
 
 #bill-total,
@@ -54,6 +67,36 @@ label {
   border: none;
   background: hsl(189, 41%, 97%);
   border-radius: 4px;
+}
+
+input {
+  font-size: 24px;
+}
+
+input:hover,
+input:focus {
+  cursor: pointer;
+}
+
+#custom {
+  width: 100%;
+  font-weight: 700;
+  color: hsl(186, 14%, 43%);
+}
+
+.tip-btns {
+  width: 100%;
+  background: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 4px;
+  border: 1px solid hsl(183, 100%, 15%);
+  font-weight: 700;
+}
+
+.tip-btns:hover,
+.tip-btns:focus {
+  background: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
 }
 
 .calculations {
