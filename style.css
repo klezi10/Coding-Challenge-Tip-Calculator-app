@@ -1,15 +1,73 @@
+html {
+  font-size: 1rem;
+}
+
 body {
   font-family: 'Space Mono', monospace;
   background-color: hsl(185, 41%, 84%);
+  margin: 0;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .app {
   margin: 0 auto;
+  background: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  padding: 0 1em;
 }
 
 .container-flex {
   display: flex;
   flex-direction: column;
+}
+
+.logo img {
+  display: block;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.form-section {
+  padding: 2em 1em;
+}
+
+label {
+  width: 100%;
+}
+
+#bill-total,
+#people-total {
+  width: 100%;
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  text-align: right;
+}
+
+#bill-total,
+#people-total,
+#custom {
+  border: none;
+  background: hsl(189, 41%, 97%);
+  border-radius: 4px;
+}
+
+.calculations {
+  background: hsl(183, 100%, 15%);
+  color: hsl(172, 67%, 45%);
+  border-radius: 10px;
+}
+
+.btn-branding {
+  background: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  width: 100%;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .attribution {
@@ -18,10 +76,4 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
-
-@media (min-width: 475px) {
-  .container-flex {
-    flex-direction: row;
-  }
 }
