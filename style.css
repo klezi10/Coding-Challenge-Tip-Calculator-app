@@ -12,6 +12,7 @@ body {
   display: block;
   margin: 0 auto;
   padding: 0;
+  /* padding: 20px 200px; */
 }
 
 .app {
@@ -21,9 +22,30 @@ body {
   padding: 0 1em;
 }
 
-.container-flex {
+/* .container-flex {
   display: flex;
   flex-direction: column;
+} */
+
+/* .form {
+  display: flex;
+  flex-direction: column;
+} */
+
+/* @media (min-width: 375px) {
+  .container-flex {
+    flex-direction: row;
+  }
+} */
+
+.columns {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.col-1,
+.col-2 {
+  width: 100%;
 }
 
 .logo img {
@@ -105,7 +127,7 @@ input:focus {
   border-radius: 10px;
 }
 
-.btn-branding {
+.reset-btn {
   background: hsl(172, 67%, 45%);
   color: hsl(183, 100%, 15%);
   width: 100%;
