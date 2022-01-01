@@ -125,6 +125,7 @@ input:focus {
   background: hsl(183, 100%, 15%);
   color: hsl(172, 67%, 45%);
   border-radius: 10px;
+  padding: 20px;
 }
 
 .reset-btn {
@@ -133,6 +134,8 @@ input:focus {
   width: 100%;
   font-weight: 700;
   text-transform: uppercase;
+  padding: 1em;
+  border-radius: 4px;
 }
 
 .attribution {
