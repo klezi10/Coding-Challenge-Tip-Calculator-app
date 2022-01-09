@@ -38,7 +38,7 @@ body {
   }
 } */
 
-.columns {
+.form-section .columns {
   display: flex;
   /* justify-content: space-between; */
 }
@@ -70,10 +70,12 @@ body {
   background-position-y: center;
 }
 
-/* label {
-  width: 100%;
-  margin-left: 10px;
-} */
+label {
+  /* width: 100%; */
+  /* margin-left: 10px; */
+  font-weight: 700;
+  opacity: 0.7;
+}
 
 #bill-total,
 #people-total {
@@ -137,14 +139,39 @@ input:focus {
   padding: 20px;
 }
 
+.calculations .columns {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  margin: 1.3rem 0;
+}
+
+.calculations span {
+  display: block;
+  color: hsl(184, 14%, 56%);
+  font-size: 12px;
+}
+
+.calculations .amount-text {
+  color: white;
+}
+
+.calculations .dollar-tip,
+.calculations .dollar-total {
+  font-size: 30px;
+  text-align: end;
+  font-weight: 700;
+}
+
 .reset-btn {
   background: hsl(172, 67%, 45%);
   color: hsl(183, 100%, 15%);
   width: 100%;
+  font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 1em;
-  border-radius: 4px;
+  padding: 1rem;
+  border-radius: 6px;
 }
 
 .attribution {
