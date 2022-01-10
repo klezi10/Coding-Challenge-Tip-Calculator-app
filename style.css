@@ -17,7 +17,7 @@ body {
 .app {
   margin: 0 auto;
   background: hsl(0, 0%, 100%);
-  border-radius: 10px;
+  border-radius: 18px;
   padding: 0 1em;
 }
 
@@ -94,13 +94,16 @@ input:focus {
 }
 
 #custom {
-  width: 90%;
   font-weight: 700;
   color: hsl(186, 14%, 43%);
   padding: 0.7rem 1.2rem;
-  width: 72%;
+  width: 75%;
   border-radius: 6px;
   text-align: end;
+}
+
+.col-2 {
+  overflow-x: hidden;
 }
 
 .tip-btns {
@@ -127,8 +130,8 @@ input:focus {
 .calculations {
   background: hsl(183, 100%, 15%);
   color: hsl(172, 67%, 45%);
-  border-radius: 10px;
-  padding: 20px;
+  border-radius: 18px;
+  padding: 45px;
 }
 
 .calculations .columns {
@@ -180,18 +183,22 @@ input:focus {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 675px) {
   .container-flex {
     flex-direction: row;
     justify-content: space-between;
   }
 
   .container {
-    padding: 20px 200px;
+    margin: 20px 200px;
   }
 
   .form-section,
   .calculations {
     width: 100%;
+  }
+
+  .calculations {
+    margin: 33px 20px;
   }
 }
