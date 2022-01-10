@@ -12,7 +12,6 @@ body {
   display: block;
   margin: 0 auto;
   padding: 0;
-  /* padding: 20px 200px; */
 }
 
 .app {
@@ -22,21 +21,10 @@ body {
   padding: 0 1em;
 }
 
-/* .container-flex {
+.container-flex {
   display: flex;
   flex-direction: column;
-} */
-
-/* .form {
-  display: flex;
-  flex-direction: column;
-} */
-
-/* @media (min-width: 375px) {
-  .container-flex {
-    flex-direction: row;
-  }
-} */
+}
 
 .form-section .columns {
   display: flex;
@@ -190,4 +178,20 @@ input:focus {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 600px) {
+  .container-flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .container {
+    padding: 20px 200px;
+  }
+
+  .form-section,
+  .calculations {
+    width: 100%;
+  }
 }
