@@ -64,8 +64,8 @@ label {
   opacity: 0.7;
 }
 
-#bill-total,
-#people-total {
+#bill-value,
+#people-value {
   width: 100%;
   color: hsl(183, 100%, 15%);
   font-weight: 700;
@@ -73,8 +73,8 @@ label {
   padding: 0.4em;
 }
 
-#bill-total,
-#people-total,
+#bill-value,
+#people-value,
 #custom {
   border: none;
   background: hsl(189, 41%, 97%);
