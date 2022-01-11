@@ -18,8 +18,7 @@ function calculate(event) {
   console.log(event.target.defaultValue);
   let tip = (billValue.value * parseInt(event.target.defaultValue)) / 100;
   let totalBill = tip + parseInt(billValue.value);
-  console.log(tip);
-  console.log(totalBill);
+
   dollarTip.textContent = `$${parseFloat(tip).toFixed(2)}`;
   dollarTotal.textContent = `$${parseFloat(totalBill).toFixed(2)}`;
 }
