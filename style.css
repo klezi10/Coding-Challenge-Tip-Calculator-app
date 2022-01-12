@@ -175,6 +175,11 @@ input:focus {
   cursor: pointer;
 }
 
+.reset-btn:disabled {
+  cursor: not-allowed;
+  background: hsl(183, 98%, 24%);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
