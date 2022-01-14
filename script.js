@@ -55,4 +55,5 @@ resetBtn.addEventListener('click', () => {
   dollarTotal.textContent = '$0.00';
   resetBtn.disabled = true;
   numberOfPeople.value = '';
+  customTip.value = '';
 });
