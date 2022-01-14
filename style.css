@@ -206,4 +206,9 @@ input:focus {
   .calculations {
     margin: 33px 20px;
   }
+
+  .reset-btn {
+    display: block;
+    margin-top: 160px;
+  }
 }
