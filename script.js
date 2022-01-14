@@ -17,13 +17,22 @@ for (const button of buttons) {
 }
 
 function calculate(event) {
-  console.log(event.target.defaultValue);
-  let tip = (billValue.value * parseInt(event.target.defaultValue)) / 100;
+  // console.log(event.target.value);
+  let tip = (billValue.value * parseInt(event.target.value)) / 100;
   let totalBill = tip + parseInt(billValue.value);
 
   dollarTip.textContent = `$${parseFloat(tip).toFixed(2)}`;
   dollarTotal.textContent = `$${parseFloat(totalBill).toFixed(2)}`;
 }
+
+// ================= CUSTOM TIP ==============
+
+const customTip = document.getElementById('custom');
+
+customTip.addEventListener('keyup', (event) => {
+  console.log(event.target.value);
+  calculate(event);
+});
 
 // =================== RESET BTN=============
 
@@ -33,12 +42,9 @@ function calculate(event) {
 //   resetBtn.disabled = false;
 // }
 
-function resetTotals() {
-  console.log('reset btn');
+resetBtn.addEventListener('click', () => {
   billValue.value = '';
   dollarTip.textContent = '$0.00';
   dollarTotal.textContent = '$0.00';
   resetBtn.disabled = true;
-}
-
-resetBtn.addEventListener('click', resetTotals);
+});
