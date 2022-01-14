@@ -1,6 +1,9 @@
 const billValue = document.getElementById('bill-value');
 const buttons = document.querySelectorAll('.tip-btns');
 const resetBtn = document.getElementById('reset-btn');
+const dollarTip = document.querySelector('.dollar-tip');
+const dollarTotal = document.querySelector('.dollar-total');
+const customTip = document.getElementById('custom');
 
 // const fivePercent = document.getElementById('five-percent');
 // const tenPercent = document.getElementById('ten-percent');
@@ -9,8 +12,6 @@ const resetBtn = document.getElementById('reset-btn');
 // const fifty = document.getElementById('fifty-percent');
 
 // ================TIP BUTTONS =====================
-const dollarTip = document.querySelector('.dollar-tip');
-const dollarTotal = document.querySelector('.dollar-total');
 
 for (const button of buttons) {
   button.addEventListener('click', calculate);
@@ -27,10 +28,8 @@ function calculate(event) {
 
 // ================= CUSTOM TIP ==============
 
-const customTip = document.getElementById('custom');
-
 customTip.addEventListener('keyup', (event) => {
-  console.log(event.target.value);
+  // console.log(event.target.value);
   calculate(event);
 });
 
