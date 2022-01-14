@@ -175,7 +175,7 @@ input:focus {
   cursor: pointer;
 }
 
-.reset-btn:disabled {
+.reset-btn-disabled {
   cursor: not-allowed;
   background: hsl(183, 98%, 24%);
 }

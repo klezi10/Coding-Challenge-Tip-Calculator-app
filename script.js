@@ -5,6 +5,7 @@ const dollarTip = document.querySelector('.dollar-tip');
 const dollarTotal = document.querySelector('.dollar-total');
 const customTip = document.getElementById('custom');
 const numberOfPeople = document.getElementById('people-value');
+resetBtn.classList.add('reset-btn-disabled');
 
 // ================TIP BUTTONS =====================
 
@@ -15,6 +16,7 @@ for (const button of buttons) {
 function calculate(event) {
   // console.log(event.target.value);
   event.preventDefault();
+  resetBtn.classList.remove('reset-btn-disabled');
   let tip = (billValue.value * parseInt(event.target.value)) / 100;
   let totalBill = tip + parseInt(billValue.value);
 
@@ -43,17 +45,17 @@ customTip.addEventListener('keyup', (event) => {
 
 // =================== RESET BTN=============
 
-// if (billValue === null) {
-//   resetBtn.disabled = true;
-// } else {
-//   resetBtn.disabled = false;
-// }
+if (billValue != '') {
+  resetBtn.disabled = false;
+} else {
+  resetBtn.disabled = true;
+}
 
 resetBtn.addEventListener('click', () => {
   billValue.value = '';
   dollarTip.textContent = '$0.00';
   dollarTotal.textContent = '$0.00';
-  resetBtn.disabled = true;
+  resetBtn.classList.add('reset-btn-disabled');
   numberOfPeople.value = '';
   customTip.value = '';
 });
