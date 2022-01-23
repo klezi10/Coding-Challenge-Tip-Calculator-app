@@ -49,6 +49,18 @@ body {
   background-image: url(images/icon-dollar.svg);
 } */
 
+input {
+  font-size: 24px;
+  margin: 0.5rem 0 1.5rem;
+  max-width: 90%;
+  font-family: 'Space Mono', monospace;
+}
+
+input:hover,
+input:focus {
+  cursor: pointer;
+}
+
 input[type='number']#bill-value::-webkit-input-placeholder {
   background-image: url(images/icon-dollar.svg);
   background-repeat: no-repeat;
@@ -107,18 +119,6 @@ label {
   border: none;
   background: hsl(189, 41%, 97%);
   border-radius: 4px;
-}
-
-input {
-  font-size: 24px;
-  margin: 0.5rem 0 1.5rem;
-  max-width: 90%;
-  font-family: 'Space Mono', monospace;
-}
-
-input:hover,
-input:focus {
-  cursor: pointer;
 }
 
 #custom {
