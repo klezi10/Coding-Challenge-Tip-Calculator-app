@@ -61,37 +61,27 @@ input:focus {
   cursor: pointer;
 }
 
-input[type='number']#bill-value::-webkit-input-placeholder {
+input[type='number']#bill-value {
+  background-image: url(images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 10px;
+}
+
+input[type='number']#bill-value::after {
   background-image: url(images/icon-dollar.svg);
   background-repeat: no-repeat;
   background-position-y: center;
 }
 
-input[type='number']#bill-value::-moz-placeholder {
-  background-image: url(images/icon-dollar.svg);
-  background-repeat: no-repeat;
-  background-position-y: center;
-}
-
-input[type='number']#bill-value:-ms-input-placeholder {
-  background-image: url(images/icon-dollar.svg);
-  background-repeat: no-repeat;
-  background-position-y: center;
-}
-
-input[type='number']#people-value::-webkit-input-placeholder {
+input[type='number']#people-value {
   background-image: url(images/icon-person.svg);
   background-repeat: no-repeat;
   background-position-y: center;
+  background-position-x: 10px;
 }
 
-input[type='number']#people-value::-moz-placeholder {
-  background-image: url(images/icon-person.svg);
-  background-repeat: no-repeat;
-  background-position-y: center;
-}
-
-input[type='number']#people-value:-ms-input-placeholder {
+input[type='number']#people-value::after {
   background-image: url(images/icon-person.svg);
   background-repeat: no-repeat;
   background-position-y: center;
