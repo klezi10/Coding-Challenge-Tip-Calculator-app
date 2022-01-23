@@ -45,13 +45,41 @@ body {
   padding: 2em 0.7em 0.8em 1em;
 }
 
-.bill-form ::placeholder {
+/* .dollar {
+  background-image: url(images/icon-dollar.svg);
+} */
+
+input[type='number']#bill-value::-webkit-input-placeholder {
   background-image: url(images/icon-dollar.svg);
   background-repeat: no-repeat;
   background-position-y: center;
 }
 
-.people-form ::placeholder {
+input[type='number']#bill-value::-moz-placeholder {
+  background-image: url(images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+input[type='number']#bill-value:-ms-input-placeholder {
+  background-image: url(images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+input[type='number']#people-value::-webkit-input-placeholder {
+  background-image: url(images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+input[type='number']#people-value::-moz-placeholder {
+  background-image: url(images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+input[type='number']#people-value:-ms-input-placeholder {
   background-image: url(images/icon-person.svg);
   background-repeat: no-repeat;
   background-position-y: center;
