@@ -223,10 +223,11 @@ label {
 
   .calculations {
     margin: 33px 20px;
+    display: flex;
+    flex-direction: column;
   }
 
   .reset-btn {
-    display: block;
-    margin-top: 160px;
+    margin-top: auto;
   }
 }
