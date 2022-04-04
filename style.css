@@ -206,7 +206,22 @@ label {
   color: hsl(228, 45%, 44%);
 }
 
+.grid {
+  grid-template-columns: repeat(2, 3fr);
+    display: grid;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+}
+
 @media (min-width: 675px) {
+  .grid {
+    grid-template-columns: repeat(3, 2fr);
+      display: grid;
+      grid-row-gap: 5px;
+      grid-column-gap: 5px;
+    }
+
+
   .container-flex {
     flex-direction: row;
     justify-content: space-between;
