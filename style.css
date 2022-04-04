@@ -12,6 +12,7 @@ body {
   display: block;
   margin: 0 auto;
   padding: 0;
+  max-width: 100%;
 }
 
 .app {
@@ -42,18 +43,21 @@ body {
 }
 
 .form-section {
-  padding: 2em 0.7em 0.8em 1em;
+  padding-top: 2em;
+  padding-right: 0.7em;
+  padding-bottom: 0.8em;
+  padding-left: 0.7em;
+  max-width: 92%;
 }
-
-/* .dollar {
-  background-image: url(images/icon-dollar.svg);
-} */
 
 input {
   font-size: 24px;
   margin: 0.5rem 0 1.5rem;
-  max-width: 90%;
   font-family: 'Space Mono', monospace;
+}
+
+.grid input {
+  width: 210px;
 }
 
 input:hover,
@@ -88,8 +92,6 @@ input[type='number']#people-value::after {
 }
 
 label {
-  /* width: 100%; */
-  /* margin-left: 10px; */
   font-weight: 700;
   opacity: 0.7;
 }
@@ -115,13 +117,9 @@ label {
   font-weight: 700;
   color: hsl(186, 14%, 43%);
   padding: 0.7rem 1.2rem;
-  width: 75%;
+  width: 82%;
   border-radius: 6px;
   text-align: end;
-}
-
-.col-2 {
-  overflow-x: hidden;
 }
 
 .tip-btns {
@@ -155,7 +153,6 @@ label {
 .calculations .columns {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   margin: 1.3rem 0;
 }
 
@@ -209,8 +206,10 @@ label {
 .grid {
   grid-template-columns: repeat(2, 3fr);
     display: grid;
+    margin: 0 auto;
     grid-row-gap: 5px;
-    grid-column-gap: 5px;
+    grid-column-gap: 20px;
+    /* max-width: fit-content; */
 }
 
 @media (min-width: 675px) {
@@ -220,7 +219,6 @@ label {
       grid-row-gap: 5px;
       grid-column-gap: 5px;
     }
-
 
   .container-flex {
     flex-direction: row;
@@ -244,5 +242,17 @@ label {
 
   .reset-btn {
     margin-top: auto;
+  }
+
+  #custom {
+    width: 68%;
+  }
+
+  input {
+    max-width: 93%;
+  }
+
+  .grid input {
+   width: 150px;
   }
 }
