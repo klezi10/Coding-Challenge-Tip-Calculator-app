@@ -20,11 +20,12 @@ for (const button of buttons) {
 
 function calculate(event) {
   resetBtn.classList.remove('reset-btn-disabled');
-  let tip = (billValue.value * parseInt(event.target.value)) / 100;
-  let totalBill = tip + parseInt(billValue.value);
+  let bill = Number(billValue.value)
+  let tip = (bill * parseInt(event.target.value)) / 100;
+  let totalBill = tip + bill;
 
-  dollarTip.textContent = `$${parseFloat(tip).toFixed(2)}`;
-  dollarTotal.textContent = `$${parseFloat(totalBill).toFixed(2)}`;
+  dollarTip.textContent = `$${tip.toFixed(2)}`;
+  dollarTotal.textContent = `$${totalBill.toFixed(2)}`;
 
   splitCheck(tip, totalBill);
 }
@@ -42,8 +43,8 @@ function splitCheck(tip, totalBill) {
     } else {
       let newTip = tip / numberOfPeople.value;
     let newTotalBill = totalBill / numberOfPeople.value;
-    dollarTip.textContent = `$${parseFloat(newTip).toFixed(2)}`;
-    dollarTotal.textContent = `$${parseFloat(newTotalBill).toFixed(2)}`;
+    dollarTip.textContent = `$${newTip.toFixed(2)}`;
+    dollarTotal.textContent = `$${newTotalBill.toFixed(2)}`;
       if (numberOfPeopleError) {
         numberOfPeopleError.textContent = "";
       }
