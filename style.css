@@ -115,11 +115,21 @@ label {
 
 #custom {
   font-weight: 700;
-  color: hsl(186, 14%, 43%);
+  color: hsl(183, 100%, 15%);
   padding: 0.7rem 1.2rem;
   width: 82%;
   border-radius: 6px;
   text-align: end;
+}
+
+#bill-value:hover,
+#bill-value:focus {
+  border: 2px solid hsl(172, 67%, 45%);
+}
+
+#custom:hover,
+#custom:focus {
+  border: 2px solid hsl(172, 67%, 45%);
 }
 
 .tip-btns {
