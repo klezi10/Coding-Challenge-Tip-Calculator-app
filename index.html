@@ -87,7 +87,7 @@
               <label for="people-value">Number of People</label>
               <div id="number-people-error"></div>
             </div>
-            <input type="number" id="people-value" placeholder="0" />
+            <input type="number" min="0" step="1" oninput="validity.valid||(value='');" id="people-value" placeholder="0"  />
             
           </div>
         </div>

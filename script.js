@@ -34,15 +34,15 @@ function splitCheck(tip, totalBill) {
   numberOfPeople.addEventListener('change', (event) => {
     event.preventDefault();
 
-    if (event.target.value === "0") {
+    if (numberOfPeople.value === "0") {
       numberOfPeopleError.textContent = `Can't be zero`
       numberOfPeopleError.classList.add('errorMsg')
       // numberOfPeople.classList.add('errorInput')
 
 
     } else {
-      let newTip = tip / numberOfPeople.value;
-    let newTotalBill = totalBill / numberOfPeople.value;
+      let newTip = tip / Math.floor(numberOfPeople.value);
+    let newTotalBill = totalBill / Math.floor(numberOfPeople.value);
     dollarTip.textContent = `$${newTip.toFixed(2)}`;
     dollarTotal.textContent = `$${newTotalBill.toFixed(2)}`;
       if (numberOfPeopleError) {
