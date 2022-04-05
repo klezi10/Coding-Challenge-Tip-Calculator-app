@@ -33,6 +33,9 @@ function splitCheck(tip, totalBill) {
     if (event.target.value === "0") {
       numberOfPeopleError.textContent = `Can't be zero`
       numberOfPeopleError.classList.add('errorMsg')
+      // numberOfPeople.classList.add('errorInput')
+
+
     } else {
       let newTip = tip / numberOfPeople.value;
     let newTotalBill = totalBill / numberOfPeople.value;
@@ -66,4 +69,5 @@ resetBtn.addEventListener('click', () => {
   resetBtn.classList.add('reset-btn-disabled');
   numberOfPeople.value = '';
   customTip.value = '';
+  numberOfPeopleError.textContent = "";
 });

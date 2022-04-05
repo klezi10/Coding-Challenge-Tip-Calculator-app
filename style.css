@@ -223,6 +223,10 @@ label {
   font-weight: 700;
 }
 
+/* .errorInput {
+  border: 1px solid red;
+} */
+
 @media (min-width: 675px) {
   .grid {
     grid-template-columns: repeat(3, 2fr);
