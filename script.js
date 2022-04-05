@@ -5,7 +5,14 @@ const dollarTip = document.querySelector('.dollar-tip');
 const dollarTotal = document.querySelector('.dollar-total');
 const customTip = document.getElementById('custom');
 const numberOfPeople = document.getElementById('people-value');
+const numberOfPeopleError = document.getElementById('number-people-error')
 resetBtn.classList.add('reset-btn-disabled');
+
+// if (numberOfPeople.value === 0) {
+//   console.log('error')
+// } else {
+//   console.log('else')
+// }
 
 // ================TIP BUTTONS =====================
 
@@ -27,12 +34,22 @@ function calculate(event) {
 }
 
 function splitCheck(tip, totalBill) {
-  numberOfPeople.addEventListener('keyup', (event) => {
+  numberOfPeople.addEventListener('change', (event) => {
     event.preventDefault();
-    let newTip = tip / numberOfPeople.value;
+
+    if (event.target.value === "0") {
+      // console.log(`Can't be zero`)
+      numberOfPeopleError.textContent = `Can't be zero`
+      numberOfPeopleError.classList.add('errorMsg')
+    } else {
+      let newTip = tip / numberOfPeople.value;
     let newTotalBill = totalBill / numberOfPeople.value;
     dollarTip.textContent = `$${parseFloat(newTip).toFixed(2)}`;
     dollarTotal.textContent = `$${parseFloat(newTotalBill).toFixed(2)}`;
+    
+    }
+
+    
   });
 }
 

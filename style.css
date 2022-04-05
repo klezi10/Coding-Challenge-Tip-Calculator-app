@@ -209,7 +209,17 @@ label {
     margin: 0 auto;
     grid-row-gap: 5px;
     grid-column-gap: 20px;
-    /* max-width: fit-content; */
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.errorMsg {
+  color: red;
+  opacity: 0.7;
+  margin-right: 15px;
 }
 
 @media (min-width: 675px) {
