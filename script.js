@@ -11,11 +11,14 @@ resetBtn.classList.add('reset-btn-disabled');
 // ================TIP BUTTONS =====================
 
 for (const button of buttons) {
-  button.addEventListener('click', calculate);
+  button.addEventListener('click', (event) => {
+    event.preventDefault()
+    button.style.backgroundColor = 'hsl(172, 67%, 45%)';
+    calculate(event)
+  });
 }
 
 function calculate(event) {
-  event.preventDefault();
   resetBtn.classList.remove('reset-btn-disabled');
   let tip = (billValue.value * parseInt(event.target.value)) / 100;
   let totalBill = tip + parseInt(billValue.value);
@@ -66,8 +69,12 @@ resetBtn.addEventListener('click', () => {
   billValue.value = '';
   dollarTip.textContent = '$0.00';
   dollarTotal.textContent = '$0.00';
-  resetBtn.classList.add('reset-btn-disabled');
+  
   numberOfPeople.value = '';
   customTip.value = '';
   numberOfPeopleError.textContent = "";
+  for (const button of buttons) {
+    button.style.backgroundColor = 'hsl(183, 100%, 15%)';
+  }
+  resetBtn.classList.add('reset-btn-disabled');
 });

@@ -139,7 +139,7 @@ label {
 
 .tip-btns:hover,
 .tip-btns:focus {
-  background: hsl(172, 67%, 45%);
+  background-color: hsl(185, 41%, 84%);
   color: hsl(183, 100%, 15%);
 }
 
@@ -188,9 +188,15 @@ label {
 .reset-btn:hover,
 .reset-btn:focus {
   cursor: pointer;
+  background-color: hsl(185, 41%, 84%);
 }
 
 .reset-btn-disabled {
+  background: hsl(183, 98%, 24%);
+}
+
+.reset-btn-disabled:hover,
+.reset-btn-disabled:focus {
   cursor: not-allowed;
   background: hsl(183, 98%, 24%);
 }
