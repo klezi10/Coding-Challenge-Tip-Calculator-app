@@ -8,12 +8,6 @@ const numberOfPeople = document.getElementById('people-value');
 const numberOfPeopleError = document.getElementById('number-people-error')
 resetBtn.classList.add('reset-btn-disabled');
 
-// if (numberOfPeople.value === 0) {
-//   console.log('error')
-// } else {
-//   console.log('else')
-// }
-
 // ================TIP BUTTONS =====================
 
 for (const button of buttons) {
@@ -21,7 +15,6 @@ for (const button of buttons) {
 }
 
 function calculate(event) {
-  // console.log(event.target.value);
   event.preventDefault();
   resetBtn.classList.remove('reset-btn-disabled');
   let tip = (billValue.value * parseInt(event.target.value)) / 100;
@@ -38,7 +31,6 @@ function splitCheck(tip, totalBill) {
     event.preventDefault();
 
     if (event.target.value === "0") {
-      // console.log(`Can't be zero`)
       numberOfPeopleError.textContent = `Can't be zero`
       numberOfPeopleError.classList.add('errorMsg')
     } else {
@@ -56,7 +48,6 @@ function splitCheck(tip, totalBill) {
 // ================= CUSTOM TIP ==============
 
 customTip.addEventListener('keyup', (event) => {
-  // console.log(event.target.value);
   calculate(event);
 });
 
