@@ -46,10 +46,10 @@ function splitCheck(tip, totalBill) {
     let newTotalBill = totalBill / numberOfPeople.value;
     dollarTip.textContent = `$${parseFloat(newTip).toFixed(2)}`;
     dollarTotal.textContent = `$${parseFloat(newTotalBill).toFixed(2)}`;
-    
+      if (numberOfPeopleError) {
+        numberOfPeopleError.textContent = "";
+      }
     }
-
-    
   });
 }
 
