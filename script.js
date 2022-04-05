@@ -37,7 +37,7 @@ function splitCheck(tip, totalBill) {
     if (numberOfPeople.value === "0") {
       numberOfPeopleError.textContent = `Can't be zero`
       numberOfPeopleError.classList.add('errorMsg')
-      // numberOfPeople.classList.add('errorInput')
+      numberOfPeople.style.border = '1px solid red';
 
 
     } else {
@@ -47,6 +47,7 @@ function splitCheck(tip, totalBill) {
     dollarTotal.textContent = `$${newTotalBill.toFixed(2)}`;
       if (numberOfPeopleError) {
         numberOfPeopleError.textContent = "";
+        numberOfPeople.style.border = 'none';
       }
     }
   });
@@ -74,6 +75,7 @@ resetBtn.addEventListener('click', () => {
   numberOfPeople.value = '';
   customTip.value = '';
   numberOfPeopleError.textContent = "";
+  numberOfPeople.style.border = 'none';
   for (const button of buttons) {
     button.style.backgroundColor = 'hsl(183, 100%, 15%)';
   }
