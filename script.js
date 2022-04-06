@@ -68,10 +68,11 @@ if (billValue != '') {
 }
 
 resetBtn.addEventListener('click', () => {
+  billValue.value = '';
   location.reload()
 
   //resetting without refreshing
-  // billValue.value = '';
+
   // dollarTip.textContent = '$0.00';
   // dollarTotal.textContent = '$0.00';
   
