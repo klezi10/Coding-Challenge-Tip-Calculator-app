@@ -68,7 +68,11 @@ if (billValue != '') {
 }
 
 resetBtn.addEventListener('click', () => {
-  // billValue.value = '';
+  //manually resetting these values for firefox
+  billValue.value = '';
+  numberOfPeople.value = '';
+  customTip.value = '';
+
   window.location.reload()
 
   //resetting without refreshing
@@ -76,8 +80,7 @@ resetBtn.addEventListener('click', () => {
   // dollarTip.textContent = '$0.00';
   // dollarTotal.textContent = '$0.00';
   
-  // numberOfPeople.value = '';
-  // customTip.value = '';
+  
   // numberOfPeopleError.textContent = "";
   // numberOfPeople.style.border = 'none';
   // for (const button of buttons) {
