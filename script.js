@@ -44,6 +44,7 @@ function splitCheck(tip, totalBill) {
     let newTotalBill = totalBill / Math.floor(numberOfPeople.value);
     dollarTip.textContent = `$${newTip.toFixed(2)}`;
     dollarTotal.textContent = `$${newTotalBill.toFixed(2)}`;
+
       if (numberOfPeopleError) {
         numberOfPeopleError.textContent = "";
         numberOfPeople.style.border = 'none';
