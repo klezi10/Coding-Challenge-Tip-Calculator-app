@@ -113,6 +113,11 @@ label {
   border-radius: 4px;
 }
 
+#bill-value:hover,
+#bill-value:focus {
+  border: 2px solid hsl(172, 67%, 45%);
+}
+
 #custom {
   font-weight: 700;
   color: hsl(183, 100%, 15%);
@@ -120,11 +125,6 @@ label {
   width: 82%;
   border-radius: 6px;
   text-align: end;
-}
-
-#bill-value:hover,
-#bill-value:focus {
-  border: 2px solid hsl(172, 67%, 45%);
 }
 
 #custom:hover,
@@ -143,14 +143,14 @@ label {
   padding: 0.7rem 1.2rem;
 }
 
-.people-form {
-  margin-top: 1rem;
-}
-
 .tip-btns:hover,
 .tip-btns:focus {
   background-color: hsl(185, 41%, 84%);
   color: hsl(183, 100%, 15%);
+}
+
+.people-form {
+  margin-top: 1rem;
 }
 
 .calculations {
@@ -221,10 +221,10 @@ label {
 
 .grid {
   grid-template-columns: repeat(2, 3fr);
-    display: grid;
-    margin: 0 auto;
-    grid-row-gap: 5px;
-    grid-column-gap: 20px;
+  display: grid;
+  margin: 0 auto;
+  grid-row-gap: 5px;
+  grid-column-gap: 20px;
 }
 
 .flex {
@@ -242,10 +242,10 @@ label {
 @media (min-width: 675px) {
   .grid {
     grid-template-columns: repeat(3, 2fr);
-      display: grid;
-      grid-row-gap: 5px;
-      grid-column-gap: 5px;
-    }
+    display: grid;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+  }
 
   .container-flex {
     flex-direction: row;

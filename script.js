@@ -6,9 +6,8 @@ const dollarTotal = document.querySelector('.dollar-total');
 const customTip = document.getElementById('custom');
 const numberOfPeople = document.getElementById('people-value');
 const numberOfPeopleError = document.getElementById('number-people-error')
-resetBtn.classList.add('reset-btn-disabled');
 
-// ================TIP BUTTONS =====================
+resetBtn.classList.add('reset-btn-disabled');
 
 for (const button of buttons) {
   button.addEventListener('click', (event) => {
@@ -37,7 +36,7 @@ function splitCheck(tip, totalBill) {
     if (numberOfPeople.value === "0") {
       numberOfPeopleError.textContent = `Can't be zero`
       numberOfPeopleError.classList.add('errorMsg')
-      numberOfPeople.style.border = '1px solid red';
+      numberOfPeople.style.border = '2px solid red';
 
 
     } else {
@@ -53,19 +52,9 @@ function splitCheck(tip, totalBill) {
   });
 }
 
-// ================= CUSTOM TIP ==============
-
 customTip.addEventListener('keyup', (event) => {
   calculate(event);
 });
-
-// =================== RESET BTN=============
-
-if (billValue != '') {
-  resetBtn.disabled = false;
-} else {
-  resetBtn.disabled = true;
-}
 
 resetBtn.addEventListener('click', () => {
   //manually resetting these values for firefox
@@ -76,7 +65,6 @@ resetBtn.addEventListener('click', () => {
   window.location.reload()
 
   //resetting without refreshing
-
   // dollarTip.textContent = '$0.00';
   // dollarTotal.textContent = '$0.00';
   
