@@ -68,16 +68,19 @@ if (billValue != '') {
 }
 
 resetBtn.addEventListener('click', () => {
-  billValue.value = '';
-  dollarTip.textContent = '$0.00';
-  dollarTotal.textContent = '$0.00';
+  location.reload()
+
+  //resetting without refreshing
+  // billValue.value = '';
+  // dollarTip.textContent = '$0.00';
+  // dollarTotal.textContent = '$0.00';
   
-  numberOfPeople.value = '';
-  customTip.value = '';
-  numberOfPeopleError.textContent = "";
-  numberOfPeople.style.border = 'none';
-  for (const button of buttons) {
-    button.style.backgroundColor = 'hsl(183, 100%, 15%)';
-  }
-  resetBtn.classList.add('reset-btn-disabled');
+  // numberOfPeople.value = '';
+  // customTip.value = '';
+  // numberOfPeopleError.textContent = "";
+  // numberOfPeople.style.border = 'none';
+  // for (const button of buttons) {
+  //   button.style.backgroundColor = 'hsl(183, 100%, 15%)';
+  // }
+  // resetBtn.classList.add('reset-btn-disabled');
 });
