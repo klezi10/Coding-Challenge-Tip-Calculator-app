@@ -68,7 +68,7 @@ if (billValue != '') {
 }
 
 resetBtn.addEventListener('click', () => {
-  billValue.value = '';
+  // billValue.value = '';
   location.reload()
 
   //resetting without refreshing
