@@ -3,6 +3,11 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   background-color: hsl(185, 41%, 84%);
   margin: 0;
   font-family: 'Space Mono', monospace;
