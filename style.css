@@ -14,10 +14,11 @@ body {
 }
 
 .container {
+  max-width: 900px;
   display: block;
   margin: 0 auto;
   padding: 0;
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 .app {
@@ -113,14 +114,14 @@ label {
 #bill-value,
 #people-value,
 #custom {
-  border: none;
+  border: 1px solid transparent;
   background: hsl(189, 41%, 97%);
   border-radius: 4px;
 }
 
 #bill-value:hover,
 #bill-value:focus {
-  border: 2px solid hsl(172, 67%, 45%);
+  border: 1px solid hsl(172, 67%, 45%);
 }
 
 #custom {
@@ -129,12 +130,13 @@ label {
   padding: 0.7rem 1.2rem;
   width: 82%;
   border-radius: 6px;
+  border: 1px solid transparent;
   text-align: end;
 }
 
 #custom:hover,
 #custom:focus {
-  border: 2px solid hsl(172, 67%, 45%);
+  border: 1px solid hsl(172, 67%, 45%);
 }
 
 .tip-btns {
