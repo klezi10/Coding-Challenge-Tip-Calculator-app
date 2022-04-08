@@ -9,10 +9,16 @@ const numberOfPeopleError = document.getElementById('number-people-error')
 
 resetBtn.classList.add('reset-btn-disabled');
 
+let activeBtn = null;
+
 for (const button of buttons) {
   button.addEventListener('click', (event) => {
     event.preventDefault()
-    button.style.backgroundColor = 'hsl(172, 67%, 45%)';
+    event.currentTarget.classList.add("active");
+    if ((activeBtn = null && activeBtn != event.currentTarget)) {
+      activeBtn.classList.remove("active");
+    }
+    activeBtn = event.currentTarget;
     calculate(event)
   });
 }
@@ -36,7 +42,7 @@ function splitCheck(tip, totalBill) {
     if (numberOfPeople.value === "0") {
       numberOfPeopleError.textContent = `Can't be zero`
       numberOfPeopleError.classList.add('errorMsg')
-      numberOfPeople.style.border = '2px solid red';
+      numberOfPeople.style.border = '1px solid red';
 
 
     } else {
