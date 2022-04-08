@@ -21,7 +21,7 @@
         <div class="form-section">
           <div class="bill-form">
             <label for="bill-value">Bill</label>
-            <input type="number" id="bill-value" placeholder="0" />
+            <input type="number" id="bill-value" placeholder="0" max="3000" oninput="validity.valid||(value='');" />
           </div>
           <div class="form">
             <label>Select Tip %</label>
@@ -67,7 +67,7 @@
                 /></label>
            
                 <label for="custom">
-                <input type="number" placeholder="Custom" id="custom" /></label>
+                <input type="number" placeholder="Custom" id="custom" max="100" oninput="validity.valid||(value='');" /></label>
          
               </div>
           </div>
@@ -77,7 +77,7 @@
               <label for="people-value">Number of People</label>
               <div id="number-people-error"></div>
             </div>
-            <input type="number" min="0" step="1" oninput="validity.valid||(value='');" id="people-value" placeholder="0"  />
+            <input type="number" min="0" step="1" max="10" oninput="validity.valid||(value='');" id="people-value" placeholder="0"  />
             
           </div>
         </div>
