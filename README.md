@@ -50,6 +50,8 @@ I learned to add an event listener to multiple buttons. I also learned how to ch
 
 ### Continued development
 
+Fix a bug where you can only click one tip button at a time.
+
 For now, I set manual reset on three inputs as a page refresh didn't work in Firefox like it worked in Chrome. I'd like to learn how to reset the page by refreshing it in Firefox.
 
 ## Author
