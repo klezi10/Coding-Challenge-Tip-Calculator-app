@@ -24,6 +24,7 @@ for (const button of buttons) {
 }
 
 function calculate(event) {
+  event.preventDefault()
   resetBtn.classList.remove('reset-btn-disabled');
   let bill = Number(billValue.value)
   let tip = (bill * parseInt(event.target.value)) / 100;
