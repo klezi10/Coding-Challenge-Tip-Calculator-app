@@ -21,77 +21,82 @@
         <div class="form-section">
           <div class="bill-form">
             <label for="bill-value">Bill</label>
-            <input type="number" id="bill-value" placeholder="0" max="3000" oninput="validity.valid||(value='');" />
+            <input
+              type="number"
+              id="bill-value"
+              placeholder="0"
+              max="3000"
+              oninput="validity.valid||(value='');"
+            />
           </div>
           <div class="form">
             <fieldset>
-            <label for="grid">Select Tip %</label>
-            <div class="grid" id="grid">
-
-              <div>
-               
-                <input
-                  type="radio"
-                  id="five-percent"
-                  name="tip"
-                  value="5%"
-                  class="tip-btns"
-                />
-                <label for="five-percent">5%</label>
-              </div>
-
-              <div>
-                <input
-                type="radio"
-                id="ten-percent"
-                name="tip"
-                value="10%"
-                class="tip-btns"
-              />
-              <label for="ten-percent">10%</label>
-              </div>
-
+              <label for="grid">Select Tip %</label>
+              <div class="grid" id="grid">
+                <div>
+                  <input
+                    type="radio"
+                    id="five-percent"
+                    name="tip"
+                    value="5%"
+                    class="tip-btns"
+                  />
+                  <label for="five-percent">5%</label>
+                </div>
 
                 <div>
                   <input
-                  type="radio"
-                   id="fifteen-percent"
-                   name="tip"
-                  value="15%"
-                  class="tip-btns"
-                />
-                <label for="fifteen-percent">15%</label>
+                    type="radio"
+                    id="ten-percent"
+                    name="tip"
+                    value="10%"
+                    class="tip-btns"
+                  />
+                  <label for="ten-percent">10%</label>
                 </div>
-        
+
                 <div>
                   <input
-                  type="radio"
-                  id="twenty-five-percent"
-                  value="25%"
-                  name="tip"
-                  class="tip-btns"
-                /> 
-                <label for="twenty-five-percent">25%</label>
+                    type="radio"
+                    id="fifteen-percent"
+                    name="tip"
+                    value="15%"
+                    class="tip-btns"
+                  />
+                  <label for="fifteen-percent">15%</label>
                 </div>
-         
-               <div>
-                 <input
-                  type="radio"
-                  id="fifty-percent"
-                  value="50%"
-                  name="tip"
-                  class="tip-btns"
-                />
-                <label for="fifty-percent">50%</label>
-               </div>
-    
-                
-               <div class="custom">
-                  <input type="number" placeholder="Custom" id="custom" max="100" oninput="validity.valid||(value='');" />
-                
+
+                <div>
+                  <input
+                    type="radio"
+                    id="twenty-five-percent"
+                    value="25%"
+                    name="tip"
+                    class="tip-btns"
+                  />
+                  <label for="twenty-five-percent">25%</label>
                 </div>
-                
-         
+
+                <div>
+                  <input
+                    type="radio"
+                    id="fifty-percent"
+                    value="50%"
+                    name="tip"
+                    class="tip-btns"
+                  />
+                  <label for="fifty-percent">50%</label>
+                </div>
+
+                <div class="custom">
+                  <input
+                    type="number"
+                    placeholder="Custom"
+                    id="custom"
+                    max="100"
+                    oninput="validity.valid||(value='');"
+                  />
+                </div>
               </div>
             </fieldset>
           </div>
@@ -101,8 +106,15 @@
               <label for="people-value">Number of People</label>
               <div id="number-people-error"></div>
             </div>
-            <input type="number" min="0" step="1" max="10" oninput="validity.valid||(value='');" id="people-value" placeholder="0"  />
-            
+            <input
+              type="number"
+              min="0"
+              step="1"
+              max="10"
+              oninput="validity.valid||(value='');"
+              id="people-value"
+              placeholder="0"
+            />
           </div>
         </div>
         <div class="calculations">
@@ -123,12 +135,21 @@
       </div>
     </main>
 
-  <footer class="attribution">
+    <footer class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX" target="_blank"
+      <a
+        href="https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX"
+        target="_blank"
         >Frontend Mentor</a
-      >| Coded by Klesta | <a href="https://github.com/klezi10/Coding-Challenge-Tip-Calculator-app" target="_blank" title="GitHub code">Open-source</a>
-  </footer>
+      >| Coded by
+      <a href="https://www.klesdev.com/" target="_blank">Klesta Luli</a> |
+      <a
+        href="https://github.com/klezi10/Coding-Challenge-Tip-Calculator-app"
+        target="_blank"
+        title="GitHub code"
+        >Open-source</a
+      >
+    </footer>
 
     <script src="script.js"></script>
   </body>

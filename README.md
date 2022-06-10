@@ -56,5 +56,5 @@ For now, I set manual reset on three inputs as a page refresh didn't work in Fir
 
 ## Author
 
-- Website - (https://clever-turing-3f9e94.netlify.app/)
+- Website - (https://www.klesdev.com/)
 - Frontend Mentor - [@klezi10](https://www.frontendmentor.io/profile/klezi10)
